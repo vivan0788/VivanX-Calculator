@@ -400,16 +400,19 @@ body {
 
 /* Equals button */
 .btn-wide {
-  background: var(--bg-btn-eq);
-  color: var(--color-eq-text);
-  border: none;
-  font-size: 22px;
-  box-shadow: 0 4px 20px var(--color-accent-glow), 0 2px 8px rgba(79,110,247,0.3);
+  
 }
 .btn-eq:hover { background: var(--bg-btn-eq-hover); transform: scale(1.06); box-shadow: 0 6px 28px var(--color-accent-glow), 0 3px 12px rgba(79,110,247,0.35); }
 
 /* Wide button (0) */
-.btn-eq { aspect-ratio: 2.2/1; grid-column: span 2; }
+.btn-eq { aspect-ratio: 2.2/1; 
+         grid-column: span 2;
+         background: var(--bg-btn-eq);
+         color: var(--color-eq-text);
+         border: none;
+         font-size: 22px;
+         box-shadow: 0 4px 20px var(--color-accent-glow), 0 2px 8px rgba(79,110,247,0.3);
+        }
 
 /* Scientific buttons */
 .btn-sci {
