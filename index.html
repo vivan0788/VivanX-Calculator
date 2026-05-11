@@ -399,7 +399,7 @@ body {
 .btn-clear:hover { background: rgba(255,95,109,0.2); color: var(--color-clear-hover); transform: scale(1.05); }
 
 /* Equals button */
-.btn-eq {
+.btn-wide {
   background: var(--bg-btn-eq);
   color: var(--color-eq-text);
   border: none;
@@ -409,7 +409,7 @@ body {
 .btn-eq:hover { background: var(--bg-btn-eq-hover); transform: scale(1.06); box-shadow: 0 6px 28px var(--color-accent-glow), 0 3px 12px rgba(79,110,247,0.35); }
 
 /* Wide button (0) */
-.btn-wide { aspect-ratio: 2.2/1; grid-column: span 2; }
+.btn-eq { aspect-ratio: 2.2/1; grid-column: span 2; }
 
 /* Scientific buttons */
 .btn-sci {
@@ -722,9 +722,9 @@ body {
       <button class="btn btn-op" onclick="inputOp('+')" title="Add" aria-label="Add">+</button>
 
       <!-- Row 5 -->
-      <button class="btn btn-num btn-wide" onclick="inputNum('0')" aria-label="0">0</button>
-      <button class="btn btn-special" onclick="inputDecimal()" title="Decimal point" aria-label="Decimal point">.</button>
       <button class="btn btn-eq" onclick="calculate()" title="Equals (Enter)" aria-label="Equals">=</button>
+      <button class="btn btn-special" onclick="inputDecimal()" title="Decimal point" aria-label="Decimal point">.</button>
+      <button class="btn btn-num btn-wide" onclick="inputNum('0')" aria-label="0">0</button>
 
     </div>
 
